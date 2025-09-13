@@ -119,7 +119,7 @@
         <div class="logo" id="brandLogo">PAY</div>
         <div>
           <h1 id="brandTitle">Pembayaran For Shinzou</h1>
-          <p class="sub">Scan QRIS atau Kirim Via DANA — Simple, Aman , Dan Cepat</p>
+          <p class="sub">Scan Qris Atau Kirim Via Dana – Simple, Aman , Dan Cepat</p>
         </div>
       </div>
 
@@ -196,7 +196,7 @@
             </button>
           </div>
 
-          <p class="hint">Jika QRIS tidak tampil, tekan Refresh atau cek koneksi.</p>
+          <p class="hint">Jika Qris Tidak Tampil, Refresh Website Atau Cek Koneksi</p>
         </div>
       </section>
     </main>
@@ -261,9 +261,9 @@
   function applyCfg(){
     document.body.setAttribute('data-theme', CFG.theme || 'dark');
     $('#brandLogo').textContent = (CFG.brand||'PAY').slice(0,4).toUpperCase();
-    $('#brandTitle').textContent = CFG.brand ? `Pembayaran • ${CFG.brand}` : 'Pembayaran • Dark Blue';
+    $('#brandTitle').textContent = CFG.brand ? `Pembayaran ${CFG.brand}` : 'Pembayaran • Dark Blue';
     $('#danaNum').textContent = CFG.dana || '—';
-    $('#receiverLine').innerHTML = `Penerima: <strong>${CFG.receiver || '—'}</strong>`;
+    $('#receiverLine').innerHTML = `Penerima : <strong>${CFG.receiver || '—'}</strong>`;
 
     // load QR
     const img = $('#qrisImg'); const skel = img.previousElementSibling;
